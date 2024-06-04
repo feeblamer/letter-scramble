@@ -1,0 +1,13 @@
+.flex-container {
+    --gap-size: 60px;
+    display: flex;
+    gap: var(--gap-size);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: calc(var(--gap-size) / 2);
+};
+
+
+
+
