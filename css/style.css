@@ -1,3 +1,10 @@
+#app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .flex-container {
     --gap-size: 60px;
     display: flex;
@@ -6,8 +13,5 @@
     justify-content: center;
     align-items: center;
     padding: calc(var(--gap-size) / 2);
-};
-
-
-
+}
 

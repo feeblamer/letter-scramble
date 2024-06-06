@@ -5,21 +5,26 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
+        <script  src="js/main.js"></script>
     </head>
     <body>
+        <div id="app">
 
-            <form class="flex-container input-container" method="get">
-                <label id="input-label">Что перемешаем?</label>
-                <input id="input-field" type="text">
-                <input id="input-button" type="submit" value="Перемешать буквы!" name="Mix">
+            <form id="input-form" class="flex-container" method="get">
+                <label id="input-label">
+                    Что перемешаем?
+                    <br>
+                    <input id="input-field" type="text" name="mixword">
+                </label>
+                <input id="input-button" type="submit" value="Перемешать буквы!">
             </form>
         
 
-            <div class="flex-container output-container">
+            <div class="flex-container" id="ouput-cotntainer" style="display: none;">
                 <p id="outupt-word" class="flex-item">Слово</p>
                 <button id="next-button" class="flex-item">Следующий вариант</button>
             </div>
-
+        </div>
     
 
     </body>
