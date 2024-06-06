@@ -10,7 +10,7 @@ function shuffle(array) {
 function shuffleString(word){
     let letters = word.split('');
     shuffle(letters);
-    return letters.join('');
+    return letters.join('').toUpperCase();
 };
 
 function show_outupt_container(){

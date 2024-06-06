@@ -11,18 +11,17 @@
         <div id="app">
 
             <form id="input-form" class="flex-container" method="get">
-                <label id="input-label">
-                    Что перемешаем?
-                    <br>
-                    <input id="input-field" type="text" name="mixword">
+                <label class="flex-item" id="input-label">
+                    <span id="label-text" class="app-element ui-element">Что перемешаем?</span>
+                    <input id="input-field" class="app-element text-element" type="text" name="mixword">
                 </label>
-                <input id="input-button" type="submit" value="Перемешать буквы!">
+                <input id="input-button" class="flex-item app-element ui-element button" type="submit" value="Перемешать буквы!">
             </form>
         
 
             <div class="flex-container" id="ouput-cotntainer" style="display: none;">
-                <p id="outupt-word" class="flex-item">Слово</p>
-                <button id="next-button" class="flex-item">Следующий вариант</button>
+                <p id="outupt-word" class="flex-item text-element">Слово</p>
+                <button id="next-button" class="flex-item app-element ui-element button">Следующий вариант</button>
             </div>
         </div>
     
