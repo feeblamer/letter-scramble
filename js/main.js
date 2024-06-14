@@ -15,9 +15,7 @@ function shuffleString(word){
 
 function show_outupt_container(){
     const conetainerElement = document.getElementById('ouput-cotntainer');
-    // conetainerElement.style.visibility = 'visible';
     conetainerElement.style.display = 'flex';
-
 };
 
 
@@ -31,7 +29,7 @@ function InputWordHandle(){
     form.addEventListener('submit', (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
-        let mixWord = formData.get('mixword');
+        let mixWord = formData.get('mixword').trim();
         MainWord = mixWord;
         console.log(mixWord);
         event.target.reset();
