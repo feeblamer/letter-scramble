@@ -16,11 +16,11 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Copy Contents
-        uses: appleboy/scp-action@v0.1.7
+        # uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.LOGIN }}
           key: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
-          source: "."
-          target: "/home/c96936/lettersmixer.na4u.ru/www/"
+
+          run: echo host username key port
