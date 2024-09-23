@@ -1,13 +1,16 @@
 :root{
   --app-width: 400px;
   --element-width: calc(var(--app-width) * 2/3);
-  --color-background: hwb(162 5% 55%);
-  --color-button: rgb(84, 155, 77);
-  --light-font-color: rgb(252, 252, 252);
-  --dark-font-color: rgb(24, 26, 136);
-  --font-size-big: 32px;
+  --color-background: hwb(22 13% 21%);
+  --color-button: rgb(109, 45, 66);
+  --light-font-color: rgb(184, 34, 71);
+  --dark-font-color: rgb(235, 193, 235);
+  --letters-background: rgb(13, 97, 100);
+  --letters-color:rgb(255, 255, 255);
+  --font-size-big: 38px;
   --font-size-normal: 20px;
   --radius: 12px;
+  --radius-small: 5px;
   --hegight-ui-element: 40px;
 }
 
@@ -94,4 +97,17 @@ body{
 
 .button{
   background-color: var(--color-button);
+}
+
+.char-element{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: var(--letters-background);
+  font-weight: 900;
+  color: var(--letters-color);
+  font-size: var(--font-size-big);
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: var(--radius-small);
+  padding-inline: 10px 10px;
+  width: 100px;
 }

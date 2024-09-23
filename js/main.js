@@ -18,10 +18,23 @@ function show_outupt_container(){
     conetainerElement.style.display = 'flex';
 };
 
+function create_word_html(word){
+    let shuffledWord = shuffleString(word);
+    let wordHtml = [];
+    for (let char of shuffledWord) {
+        el = document.createElement('span')
+        el.innerText = char
+        el.classList.add('char-element')
+        wordHtml.push(el.outerHTML);
+    }
+    return wordHtml.join('');
+}
 
 function show_mixed(word, outputWordElement){
-    outputWordElement.innerText = shuffleString(word);
-};
+    inner_html = create_word_html(word)
+    console.log(inner_html)
+    outputWordElement.innerHTML = inner_html
+    };
 
 function InputWordHandle(){
     const form = document.getElementById('input-form');
