@@ -1,0 +1,28 @@
+name: Deploy site
+
+on: [push]
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Copy content with scp
+      uses: appleboy/scp-action@main
+      env:
+        HOST: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.LOGIN }}
+        PORT: ${{ secrets.PORT }}
+      with:
+        source: "."
+        target: "/home/c96936/lettersmixer.na4u.ru/www/"
+    
+    - name: Check files
+      uses: appleboy/ssh-action@main
+      with:
+        HOST: ${{ secrets.HOST }}
+        USERNAME: ${{ secrets.LOGIN }}
+        PORT: ${{ secrets.PORT }}
+        script: ls /home/c96936/lettersmixer.na4u.ru/www/
+
+    
