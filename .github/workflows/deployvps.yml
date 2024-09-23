@@ -13,11 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Copy Contents
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.LOGIN }}
-          key: ${{ secrets.PASSWORD }}
-          port: ${{ secrets.PORT }}
+      #- name: Copy Contents
+      #  with:
+      #    host: ${{ secrets.HOST }}
+      #    username: ${{ secrets.LOGIN }}
+      #    key: ${{ secrets.PASSWORD }}
+      #   port: ${{ secrets.PORT }}
 
-          run: echo ${{ secrets.HOST }}
+      - run: echo "${{ secrets.HOST }} ${{ secrets.LOGIN }}"
