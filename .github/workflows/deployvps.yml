@@ -15,9 +15,10 @@ jobs:
         
       - name: Copy Contents
         uses:  appleboy/scp-action@v0.1.7
-        with:
+        env:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
+        with:
           source: "."
           target: "/home/c96936/lettersmixer.na4u.ru/www"
