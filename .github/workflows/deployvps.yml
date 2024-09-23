@@ -20,7 +20,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.LOGIN }}
-          password: ${{ secrets.PASSWORD }}
+          key: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: "."
           target: "/home/c96936/lettersmixer.na4u.ru/www/"
